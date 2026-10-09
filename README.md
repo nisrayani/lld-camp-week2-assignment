@@ -2,7 +2,8 @@
 
 ## 1. Goal
 
-Implement a **Mini Learning Management System (LMS)** using **any object-oriented language** you like (C++, Java, Python, C#, etc.).
+Implement a **Mini Learning Management System (LMS)** using **any object-oriented language** you like (C++, Java,
+Python, C#, etc.).
 
 You'll:
 
@@ -17,22 +18,22 @@ Here is the UML Diagram:
 
 Write a **demo program** (`main`, `App`, script, etc.) that does at least this:
 
-1.**Create data**
+1. **Create data**
 
 - An `Instructor`
 - A `Course` with:
 - At least **1 `Module`**
 - Each module with at least **2 `Lesson`s**
 
-2.**Save data**
+2. **Save data**
 
 - Store the course using your `InMemoryCourseRepository`.
 
-3.**Create a student**
+3. **Create a student**
 
 - Make a `Student` object.
 
-4.**Wire the service**
+4. **Wire the service**
 
 - Instantiate:
 
@@ -40,16 +41,16 @@ Write a **demo program** (`main`, `App`, script, etc.) that does at least this:
 
 -`InMemoryEnrollmentRepository`
 
--`EmailNotificationChannel` (and/or `SmsNotificationChannel`)
+-`SmaNotificationChannel` (and/or `SmsNotificationChannel`)
 
 -`EnrollmentService` using the above.
 
-5.**Enroll and complete lessons**
+5. **Enroll and complete lessons**
 
 - Call `EnrollmentService.enroll(student, course)`.
 - Call a method (e.g. `completeLesson`) multiple times to simulate the student finishing lessons.
 
-6.**Print final state**
+6. **Print final state**
 
 - Print enrollment status (e.g. `ACTIVE` → `COMPLETED`).
 - Print final progress (e.g. `100%`).
@@ -72,10 +73,10 @@ You’re done when you have:
 - [ ] Updates progress when lessons are completed.
 - [ ] Uses notification channels.
 - [ ] A `main` / demo that:
-- [ ] Creates instructor, student, course, module(s), lesson(s).
+- [ ] Creates instructor, student, course, module (s), lesson (s).
 - [ ] Enrolls a student.
 - [ ] Simulates completing lessons.
 - [ ] Prints final status and progress.
 - [ ] Shows notifications in console/log.
 
-That’s it—**design in code, then run your demo** 🚀
+That’s it— **design in code, then run your demo** 🚀
